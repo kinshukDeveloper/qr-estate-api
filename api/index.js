@@ -1,10 +1,10 @@
-/**
- * Vercel Serverless Entry Point
- * This file exports the Express app for Vercel to handle.
- * Vercel wraps this in a serverless function automatically.
- */
-const app = require('../src/app');
-console.log("API file loaded");
+let app;
 
+try {
+  app = require('../src/app');
+  console.log("API file loaded ✅");
+} catch (err) {
+  console.error("IMPORT ERROR ❌", err);
+}
 
 module.exports = app;
