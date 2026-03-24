@@ -1,4 +1,5 @@
-const puppeteer = require('puppeteer');
+/* eslint-disable eqeqeq */
+const puppeteer = require('puppeteer-core');
 const { query } = require('../config/database');
 const { createError } = require('../middleware/errorHandler');
 const logger = require('../config/logger');
