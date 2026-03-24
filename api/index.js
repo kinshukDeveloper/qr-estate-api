@@ -4,5 +4,7 @@
  * Vercel wraps this in a serverless function automatically.
  */
 const app = require('../src/app');
+console.log("API file loaded");
+
 
 module.exports = app;
